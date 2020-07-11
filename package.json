@@ -1,11 +1,9 @@
 {
-  "name": "birthdays",
-  "version": "1.0.0",
+  "name": "birthdays-api",
+  "version": "2.0.0",
   "scripts": {
-    "setup": "npm install && cd client && npm install",
-    "client": "cd client && npm start",
     "server": "cd api && node server.js",
-    "dev": "concurrently --kill-others-on-fail \"cd api && nodemon server.js\" \"npm run client\"",
+    "dev": "cd api && nodemon server.js",
     "test": "cd api && mocha \"./tests/**/*.test.js\""
   },
   "keywords": [],
@@ -13,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "moment": "^2.24.0"
+    "moment": "^2.27.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
