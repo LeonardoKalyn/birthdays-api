@@ -2,7 +2,7 @@
   "name": "birthdays-api",
   "version": "2.0.0",
   "scripts": {
-    "server": "cd api && node server.js",
+    "start": "cd api && node server.js",
     "dev": "cd api && nodemon server.js",
     "test": "cd api && mocha \"./tests/**/*.test.js\""
   },
