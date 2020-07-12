@@ -6,10 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
 app.use('/api', configureRoutes);
-// app.use((req, res) => {
-//   res.send(404);
-// });
 
 const PORT = process.env.PORT || 5000;
 
