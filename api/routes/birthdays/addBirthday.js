@@ -28,7 +28,6 @@ const addBirthday = (req, res) => {
   }
 
   BirthdaysData.addBirthday({date, name});
-
   res.status(200).send({date, name});
 }
 
